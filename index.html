@@ -69,6 +69,7 @@
     />
 
     <!--css-->
+    <link rel="stylesheet" href="recursos/css/dscountdown-2.css" />
     <link
       rel="stylesheet"
       type="text/css"
@@ -320,6 +321,54 @@
                     Transmisión <span>Live</span>
                   </p>
                 </div>-->
+
+                <div class="content-hours">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-12">
+                        <div class="titulo text-center">
+                          <h3>
+                            <span class="tx_rojo">¡INICIO DE PREVENTA!</span
+                            ><br />
+                            <span class="span-day">MARTES 12 | 11:00 A.M.</span>
+                          </h3>
+                          <p class="faltan"><b>SOLO FALTAN</b></p>
+                        </div>
+
+                        <!--contador-->
+                        <div class="time-event">
+                          <div class="time-event">
+                            <dive class="time">
+                              <span class="title-desc"> </span>
+                              <ul class="countdown">
+                                <li>
+                                  <span class="days">00</span>
+                                  <p class="days_ref">Días</p>
+                                </li>
+                                <li class="seperator"></li>
+                                <li>
+                                  <span class="hours">00</span>
+                                  <p class="hours_ref">Horas</p>
+                                </li>
+                                <li class="seperator">:</li>
+                                <li>
+                                  <span class="minutes">00</span>
+                                  <p class="minutes_ref">Minutos</p>
+                                </li>
+                                <li class="seperator">:</li>
+                                <li>
+                                  <span class="seconds">00</span>
+                                  <p class="seconds_ref">Segundos</p>
+                                </li>
+                              </ul>
+                            </dive>
+                          </div>
+                        </div>
+                        <!--fin contador-->
+                      </div>
+                    </div>
+                  </div>
+                </div>
                 <div class="mapa">
                   <img
                     class="img-fluid img_mapa"
@@ -817,6 +866,17 @@
       var scroll = new SmoothScroll('a[href*="#"]');
     </script>
     <!--scrool-->
+
+    <script
+      type="text/javascript"
+      src="https://cdn.teleticket.com.pe/especiales/badbunny2022/js/jquery.downCount.js"
+    ></script>
+    <script class="source" type="text/javascript">
+      $(".countdown").downCount({
+        date: "07/12/2022 11:00:00", //mm/dd/aaaa
+        offset: -5,
+      });
+    </script>
 
     <script type="text/javascript">
       $(".modal.stop-video-on-close").on("hidden.bs.modal", function (e) {
